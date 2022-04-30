@@ -98,4 +98,11 @@ footer {
   nav ul {
     flex-direction: column;
   }
+  section {
+    display: block;
+  }
+  div.left, div.middle, div.right {
+    width: 95%;
+    margin: 10px;
+  }
 }
