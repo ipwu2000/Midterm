@@ -1,1 +1,108 @@
-
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+div.container{
+  border: 5px solid #851255;
+  width: 98%;
+  margin: 0 auto;
+}
+header{
+  background-color: lightgreen;
+  display: flex;
+  justify-content:space-around;
+}
+header img {
+  width: 100%;
+}
+div.logo-title{
+  width: 40%;
+  margin: auto 0;
+}
+div.search-bar{
+  width: 30px;
+  margin: auto;
+}
+div.social-links{
+  margin: auto 0;
+}
+.social-links li{
+  background-color: lightgreen;
+  display: inline-block;
+  width: 50px;
+  padding: 10px;
+}
+nav{
+  background-color: darkolivegreen;
+}
+nav ul{
+  display: flex;
+  justify-content:space-around;
+}
+nav ul li{
+  display: inline-block;
+  border: 2px solid yellow;
+  background-color: orange;
+  width: 140px;
+  margin: 3px;
+  line-height: 2em;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-variant: small-caps;
+  font-size: larger;
+}
+nav ul li a{
+  /* Take whole space of li, so the whole botton is clickale */
+  display: block;
+  color:lightgoldenrodyellow;
+  text-decoration: none;
+  margin-left: 10%;
+}
+nav ul li a img{
+  width: 40%;
+  float: right;
+}
+article{
+  background-color: lightseagreen;
+}
+h1, p{
+  padding: 10px;
+}
+section{
+  clear:both;
+  /* expand items to fill free space or shrink to prevent overflow */
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  margin: 10px 0 ;
+}
+section img {
+  width: 100%;
+}
+div.left, div.middle, div.right {
+  border: 3px solid green;
+  width: 32%;
+}
+footer {
+  clear:both;
+  background-color: darkgray;
+  color: white;
+  line-height: 2em;
+  padding-left: 10px;
+}
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  nav {
+    float: left;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  section {
+    display: block;
+  }
+  div.left, div.middle, div.right {
+    width: 95%;
+    margin: 10px;
+  }
+}
